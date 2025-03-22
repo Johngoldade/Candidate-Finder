@@ -1,6 +1,8 @@
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import 'materialize-css/dist/css/materialize.css'
 import './index.css';
+
 
 import App from './App.tsx';
 import CandidateSearch from './pages/CandidateSearch.tsx';

@@ -13,6 +13,34 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+header {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.87);
+  width: fit-content;
+  
+}
+
+.header-div {
+  display: flex;
+  align-items: center;
+}
+
+.header-h1 {
+  padding: 10px;
+}
+
+.header-img {
+  width: 60px;
+  height: 60px;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -60,6 +88,10 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+#root {
+  width: 100%
 }
 
 @media (prefers-color-scheme: light) {

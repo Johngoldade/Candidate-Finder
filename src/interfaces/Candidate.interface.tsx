@@ -9,4 +9,11 @@ interface Candidate {
     biography: string,
     location: string,
     email: string,
+    saveAndGetNext: () => void
+    getNext: () => void 
+}
+
+
+interface Users {
+    login: string
 }

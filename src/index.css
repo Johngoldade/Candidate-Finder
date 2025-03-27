@@ -71,24 +71,6 @@ h1 {
   line-height: 1.1;
 }
 
-/* button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
 .card-page {
   display: flex;
   flex-direction: column;
@@ -96,7 +78,8 @@ button:focus-visible {
 }
 
 .card-size {
-  min-width:fit-content;
+  width:420px;
+  min-height: 700px;
 }
 
 .card-img-alt {
@@ -120,6 +103,29 @@ button:focus-visible {
   color: black
 }
 
+.list-container {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f9f9f9;
+  width: fit-content;
+  height: fit-content;
+  padding: 2px;
+  margin: 5px
+}
+
+.list-div {
+  text-align: center;
+  align-content: center;
+  word-wrap:break-word ;
+  background-color: lightgrey;
+  color: #333333;
+  width:200px;
+  height: 200px;
+  border-radius: 2px;
+  padding: 5px;
+  margin: 2px
+}
 .button-div {
   background-color: transparent;
   padding: 20px;
@@ -186,4 +192,11 @@ tbody tr:nth-child(odd) {
 .table {
   width: 80vw;
   table-layout: fixed;
+}
+
+@media screen and ( max-width: 568px ){
+  .card-size {
+    width:320px;
+    min-height: 600px;
+  }
 }

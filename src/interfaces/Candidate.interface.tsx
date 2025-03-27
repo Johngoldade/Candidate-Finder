@@ -6,7 +6,7 @@ interface Candidate {
     html_url: string,
     name: string,
     company: string,
-    biography: string,
+    bio: string,
     location: string,
     email: string,
     saveAndGetNext: () => void

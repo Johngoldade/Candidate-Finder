@@ -12,7 +12,7 @@ const CandidateSearch = () => {
     const chooseCandidates = async () => {
       const profile: Users[] = await searchGithub()
 
-      localStorage.setItem('candidate', JSON.stringify([]))
+      // localStorage.setItem('candidate', JSON.stringify([]))
     
       const renderFirstUser = async () => {
         const user: Users | undefined = profile.pop()
@@ -39,6 +39,7 @@ const CandidateSearch = () => {
         const nextUserData = await searchGithubUser(nextLogin)
         setCandidate(nextUserData)
       } else {
+        setCandidate({} as Candidate)
         console.log('No candidates')
       }
     }
@@ -58,13 +59,13 @@ const CandidateSearch = () => {
   
   if (candidate) {
     return (
-      <Cards login={candidate.login} name={candidate.name} avatar_url={candidate.avatar_url} html_url={candidate.html_url} company={candidate.company} location={candidate.location} email={candidate.email} saveAndGetNext={saveCandidate} getNext={moveToNextCandidate} id={candidate.id} biography={candidate.biography}/>
+      <Cards login={candidate.login} name={candidate.name} avatar_url={candidate.avatar_url} html_url={candidate.html_url} company={candidate.company} location={candidate.location} email={candidate.email} saveAndGetNext={saveCandidate} getNext={moveToNextCandidate} id={candidate.id} bio={candidate.bio}/>
     )
   } else {
     return(
       <>
         <h1>CandidateSearch</h1>
-        <h5>No Candidates Found!</h5>
+        <h5>No Candidates!</h5>
       </>
     )
   }

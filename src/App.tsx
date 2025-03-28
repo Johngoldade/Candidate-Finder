@@ -1,7 +1,8 @@
+// Import the needed package items
 import { Outlet } from 'react-router-dom';
 import Nav from './components/Nav';
 
-
+// Return the App with the header, nav, and the body for whichever page corresponds to the current route
 function App() {
   return (
     <>
@@ -21,4 +22,3 @@ function App() {
 
 export default App;
 
-{/* <a href="https://www.flaticon.com/free-icons/recruitment" title="recruitment icons">Recruitment icons created by Erix - Flaticon</a> */}

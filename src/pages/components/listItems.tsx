@@ -1,4 +1,5 @@
-export default function ListItems ({ name, login, location, avatar_url, email, html_url, company, bio}: Candidate) {
+// List item component to export
+export default function ListItems ({ id, name, login, location, avatar_url, email, html_url, company, bio, deleteProfile }: Candidate) {
 
     return (
         <>
@@ -23,6 +24,10 @@ export default function ListItems ({ name, login, location, avatar_url, email, h
                 </div>
                 <div>
                     {company ? (<p className="list-div">{company}</p>) : <p className="list-div">Company not Available</p>}
+                </div>
+                <div>
+                    {/* Used CoPilot to help build this type check */}
+                    <button onClick={() => deleteProfile && deleteProfile(id)} className="del-button">DELETE</button>
                 </div>
             </div>
         </>

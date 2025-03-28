@@ -1,3 +1,4 @@
+// Return error page component
 const ErrorPage = () => {
   return (
     <section>

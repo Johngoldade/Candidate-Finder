@@ -1,4 +1,4 @@
-// TODO: Create an interface for the Candidate objects returned by the API
+// Interface for the Candidate objects returned by the API
 interface Candidate {
     login: string,
     id: number,
@@ -6,14 +6,15 @@ interface Candidate {
     html_url: string,
     name: string,
     company: string,
-    bio: string,
+    bio?: string,
     location: string,
     email: string,
-    saveAndGetNext: () => void
-    getNext: () => void 
+    saveAndGetNext?: () => void
+    getNext?: () => void 
+    deleteProfile?: (id: number) => void
 }
 
-
+// Interface for the users returned from the GitHub search
 interface Users {
     login: string
 }

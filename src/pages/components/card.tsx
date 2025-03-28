@@ -1,4 +1,4 @@
-
+// Export function to build the card component
 export default function Cards({ avatar_url, name, login, location, email, html_url, company, saveAndGetNext, getNext}: Candidate) {
     
     return (

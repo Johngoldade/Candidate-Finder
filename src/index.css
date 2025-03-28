@@ -82,6 +82,11 @@ h1 {
   min-height: 700px;
 }
 
+.img-size {
+  width: 420px;
+  height: 420px
+}
+
 .card-img-alt {
   background-color: #f9f9f9;
   color: black;
@@ -198,5 +203,10 @@ tbody tr:nth-child(odd) {
   .card-size {
     width:320px;
     min-height: 600px;
+  }
+
+  .img-size {
+    width: 320px;
+    height: 320px
   }
 }

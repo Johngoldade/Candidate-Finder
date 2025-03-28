@@ -7,6 +7,7 @@ const CandidateSearch = () => {
   
   const [candidate, setCandidate] = useState<Candidate>({} as Candidate)
   const [users, setUsers] = useState<Users[]>([])
+  const [isCandidate, setIsCandidate] = useState<Boolean>(false)
 
   useEffect(() => {
     const chooseCandidates = async () => {
@@ -21,9 +22,9 @@ const CandidateSearch = () => {
           const login: string = user.login
           const userData = await searchGithubUser(login)
           setCandidate(userData)
-          console.log(candidate)
+          setIsCandidate(true)
         } else {
-          console.log('No candidates')
+          setIsCandidate(false)
         }
       }
       await renderFirstUser()
@@ -38,8 +39,9 @@ const CandidateSearch = () => {
         const nextLogin: string = nextUser.login
         const nextUserData = await searchGithubUser(nextLogin)
         setCandidate(nextUserData)
+        setIsCandidate(true)
       } else {
-        setCandidate({} as Candidate)
+        setIsCandidate(false)
         console.log('No candidates')
       }
     }
@@ -57,7 +59,7 @@ const CandidateSearch = () => {
   }
 
   
-  if (candidate) {
+  if (isCandidate) {
     return (
       <Cards login={candidate.login} name={candidate.name} avatar_url={candidate.avatar_url} html_url={candidate.html_url} company={candidate.company} location={candidate.location} email={candidate.email} saveAndGetNext={saveCandidate} getNext={moveToNextCandidate} id={candidate.id} bio={candidate.bio}/>
     )

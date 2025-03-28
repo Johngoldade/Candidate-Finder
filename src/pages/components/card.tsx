@@ -6,11 +6,10 @@ export default function Cards({ avatar_url, name, login, location, email, html_u
         <div className="card-page">
             <h1>CandidateSearch</h1>
             <div className="row ">
-                {/* <div className="col s3"></div> */}
                 <div className="col s12 ">
                     <div className="card card-size">
-                        <div className="card-image">
-                            {avatar_url ? (<img src={avatar_url}/>) : <div className="card-img-alt">No Image Available</div> }
+                        <div className="card-image img-size">
+                            {avatar_url ? (<img  src={avatar_url}/>) : <div className="card-img-alt">No Image Available</div> }
                         </div>
                         {name || login ? (
                             <h4 className="card-head">{name} ({login})</h4>
@@ -27,7 +26,6 @@ export default function Cards({ avatar_url, name, login, location, email, html_u
                         </div>
                     </div>
                 </div>
-                {/* <div className="col s3"></div> */}
             </div>
         </div>
         </>

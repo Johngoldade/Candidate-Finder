@@ -54,12 +54,8 @@ That's it for my portfolio built with React.js!
 
 ## Credits
 
-- Link Icons were sourced from [Flaticon](https://www.flaticon.com/)...
-    - The website tab icon was [created by koicon](https://www.flaticon.com/free-icons/work-experience).
-    - The GitHub icon in the footer was [created by Dave Gandy](https://www.flaticon.com/free-icons/cat).
-    - The LinkedIn icon in the footer was [created by Ruslan Babkin](https://www.flaticon.com/free-icons/linkedin).
-    - The GitHub icon for the porfolio cards was [created by pocike](https://www.flaticon.com/free-icons/github).
-- The DEV icon was saved from [the DEV Community website](https://dev.to/).
+- The website tab / title icon was [created by Erix](https://www.flaticon.com/free-icons/recruitment).
+
 
 ## License
 

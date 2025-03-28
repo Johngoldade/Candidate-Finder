@@ -15,9 +15,9 @@ const SavedCandidates = () => {
   return (
     <>
       <h1>Potential Candidates</h1>
-      {candidateList ? (candidateList.map((candidate) => (
+      {candidateList.length ? (candidateList.map((candidate) => (
         <ListItems name={candidate.name} login={candidate.login} location={candidate.location} avatar_url={candidate.avatar_url} email={candidate.email} html_url={candidate.html_url} company={candidate.company} bio={candidate.bio} id={candidate.id} getNext={candidate.getNext} saveAndGetNext={candidate.saveAndGetNext}/>
-      ))) : <h4>"Oops, looks like you didn't save any candidates to view later!"</h4>}
+      ))) : <h5>Oops, looks like you don't have any candidates to view!</h5>}
     </>
   );
 };

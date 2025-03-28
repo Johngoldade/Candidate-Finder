@@ -67,7 +67,7 @@ const CandidateSearch = () => {
     return(
       <>
         <h1>CandidateSearch</h1>
-        <h5>No Candidates!</h5>
+        <h5>No more candidates here ... Reload the page to view more profiles!</h5>
       </>
     )
   }

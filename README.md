@@ -1,6 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# John Goldade Portfolio
+# Candidate Finder
 
 ## Description
 
@@ -22,40 +22,33 @@ To use the application, click this [link](https://candidate-finder-ufpi.onrender
 
 ## Usage
 
-Once you've successfully navigated to the webpage, feel free to poke around and see what you can learn about me and my work! 
+Once you've successfully navigated to the webpage, you'll see this page.
 
-To get you started, here is a quick tutorial on the features you'll find.
+![Image of home screen with profile card that has image, name, location, email, url, and company components as well as a green + button and a red - button](./assets/profileCard.png)
 
-When the page loads, it will look like this ...
+The cards will change every time the page is refreshed. On the cards, clicking the red "-" button will switch the card to the next profile with no additional action. However, clicking the green "+" will save the profile to the "My Candidates" page and then switch the card to the next profile.
 
-![Image of home screen with information about me and the header with my name and navbar](./readme-assets/home.png)
+If an error loading candidates occurs on the home page or if you've exhausted the current selection of profiles, you will recieve this message informing you of the issue and prompting you to reload the webpage.
 
-... where you can see an image of me and read a short bio.
+![Image of home page with message saying "No more candidates here ... Reload the page to view more profiles!"](./assets/noProfiles.png)
 
-On the footer, click on an icon to visit my profile for that site.
+On the "My Candidates" page, you'll see this screen if you have saved some profiles.
 
-![Image of footer with icons for GitHub, LinkedIn, and Dev Community](./readme-assets/footer.png)
+![Image of page with banners that include an avatar, name, biography, email, url, location, and company for each saved profile](./assets/savedProfiles.png)
 
-Navigating to the "Portfolio" page, you can view six of my deployed projects. Click on the title of the project to visit the deployed webpage or click on the GitHub icon to view the project repository.
+Lastly, if you have not saved any candidates, you will see this screen, which informs you that there are no candidates to view.
 
-![Image of portfolio page with cards of my projects. Each card has a title and an associated GitHub icon](./readme-assets/cards.png)
+![Image of page with a message that reads "Oops, looks like you don't have any candidates to view"](./assets/noSaved.png)
 
-Navigating to the "Contact" page, you can fill out a form to send me a message. The form requires all three fields to be filled out and verifies that the email address provided is valid before it will submit. If a discrepancy is found, it will display the appropriate alert.
+There is currently no way to cleanly delete candidates from the "My Candidates" page, so to do this for now, right click anywhere on the "My Candidates" page, select "Inspect", select "Application" in the Dev Tool navbar (It might be hidden by the right pointing arrows; just click those arrows to uncover it), and then click on the circle with a line though it next to the "filter" text entry. This should clear the browser's local storage, and after refreshing the page, the saved candidates should be gone!
 
-![Image of contact page with form to contact me](./readme-assets/form.png)
+Also, when refreshing the page from the "My Candidates" page, the bowser will display an error. Just navgate back to the home page and refresh it again and the application should load properly. It's a bug that I noticed but haven't had the time to troubleshoot yet.
 
-Lastly, navigating to the "Resume" page, there is a prompt asking you to click on the golden "resume" text. Clicking on this link will automatically download my (currently very incomplete) resume. Listed below the link are the current skills I have built so far in my training as a Software Developer.
-
-![Image of resume download link and list of front-end and back-end skills](./readme-assets/proficiencies.png)
-
-That's it for my portfolio built with React.js!
-
-
+That's it for Candidate Finder. Happy searching!
 
 ## Credits
 
 - The website tab / title icon was [created by Erix](https://www.flaticon.com/free-icons/recruitment).
-
 
 ## License
 
